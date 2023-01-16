@@ -4,6 +4,7 @@ const htmlPlugin = new HtmlWebPackPlugin({
     template: "./src/index.html",
     filename: "./index.html"
 });
+const ESLintPlugin = require('eslint-webpack-plugin')
 module.exports = (env, argv) => {
     console.log(argv.mode);
     return {
@@ -12,7 +13,12 @@ module.exports = (env, argv) => {
             path: path.join(__dirname, 'dist'),
             filename: "bundle.js"
         },
-        plugins: [htmlPlugin],
+        plugins: [
+            htmlPlugin,
+            new ESLintPlugin({
+                extensions: ["js", "jsx", "ts", "tsx"],
+            }),
+        ],
         module: {
             rules: [
                 {
