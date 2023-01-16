@@ -1,0 +1,17 @@
+{
+  "name": "TP1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://forge.univ-lyon1.fr/p1805563/web-temps-reels-et-multi-dispositifs/-/tree/main",
+  "author": "p1805563",
+  "license": "MIT",
+  "devDependencies": {
+    "express": "^4.18.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.15",
+    "@types/node": "^18.11.18"
+  }
+}
