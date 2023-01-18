@@ -3,9 +3,9 @@ image: node:lts
 # Functions that should be executed before the build script is run
 before_script:
   - cd client
-  - yarn
+  - yarn install
   - cd ../server
-  - yarn
+  - yarn install
 pages:
   script:
     - cd ../client
