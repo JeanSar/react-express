@@ -1,9 +1,13 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
-// Import de l'image
-import LOGO from './static/logo.jpg'
-
+import { Titre } from './components/Header/index'
+import { Image } from './components/Content/index'
 const Index = (): JSX.Element => {
-  return <div>TIW 8 TP1!<img src={LOGO} alt='Logo' /></div>
+  return (
+    <div className='container'>
+      <Titre />
+      <Image />
+    </div>
+  )
 }
 ReactDOM.render(<Index />, document.getElementById('root'))
