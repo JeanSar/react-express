@@ -4,18 +4,14 @@ image: node:lts
 before_script:
   - cd client
   - yarn install
-  - cd ../server
-  - yarn install
 pages:
   script:
-    - cd ../client
+    - pwd
     - yarn build
-    - cd ../server
-    - yarn start
   artifacts:
     paths:
       # The folder that contains the files to be exposed at the Page URL
-      - public
+      - client/dist
   rules:
     # This ensures that only pushes to the default branch will trigger
     # a pages deploy
