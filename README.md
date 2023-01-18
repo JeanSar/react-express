@@ -8,7 +8,9 @@ Fonctionnel et déployé sur GitLab Pages.
 
 ## Dépendances
 
-Listé dans les package.json
+Version de NodeJS : v18.13.0
+
+Les dépendances sont listées dans les package.json
 
 ## Setup
 Pour installer les dépendances et faire un bundle du client React :
