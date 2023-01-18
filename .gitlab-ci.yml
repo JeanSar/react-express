@@ -4,14 +4,13 @@ image: node:lts
 before_script:
   - cd client
   - yarn install
-  - cd ../server
-  - yarn install
 pages:
   script:
-    - cd ../client
+    - pwd
     - yarn build
-    - cd ../server
-    - yarn start
+    - cd ..
+    - mkdir public
+    - cp -r client/dist/* public/
   artifacts:
     paths:
       # The folder that contains the files to be exposed at the Page URL
