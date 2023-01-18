@@ -8,6 +8,9 @@ pages:
   script:
     - pwd
     - yarn build
+    - cd ..
+    - mkdir public
+    - cp -r client/dist/* public/
   artifacts:
     paths:
       # The folder that contains the files to be exposed at the Page URL
